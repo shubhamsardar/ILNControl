@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_margin="8dp" android:background="@color/blue_grey_50">
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_bug_report_black_24dp"
+            android:id="@+id/imageView" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:background="@color/blue_grey_100"/>
+    <TextView
+            android:text="Company Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/compname"
+            app:layout_constraintTop_toTopOf="@+id/imageView" app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:padding="12dp" android:textStyle="bold" android:background="@color/blue_grey_100"/>
+    <TextView
+            android:text="2 users have reported"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/reportcount" app:layout_constraintStart_toStartOf="@+id/compname"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/compname"
+            android:textSize="12sp" android:textStyle="bold" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/time" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/time"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/reportcount"
+            app:layout_constraintBottom_toBottomOf="@+id/reportcount"
+            android:textSize="12sp"/>
+    <TextView
+            android:text="Pending."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/status"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/reportcount" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/reportcount"
+            app:layout_constraintStart_toStartOf="@+id/reportcount" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/call"
+            app:layout_constraintTop_toBottomOf="@+id/status" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="1.0" android:textStyle="bold"
+    />
+</android.support.constraint.ConstraintLayout>

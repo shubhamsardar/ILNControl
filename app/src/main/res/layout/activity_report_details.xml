@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReportDetailsActivity">
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/reportes_list"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/actionreportslist"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/actionreportslist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="8dp" android:background="@color/blue_grey_50">
+        <TextView
+                android:text="Take Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/takeaction" android:layout_weight="1"
+                android:padding="4dp" android:layout_margin="4dp" android:background="@color/blue_grey_100"
+                android:gravity="center" android:textSize="14sp" android:textStyle="bold"/>
+        <TextView
+                android:text="See Reported Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/seeprofile" android:layout_weight="1"
+                android:padding="4dp" android:layout_margin="4dp" android:background="@color/blue_grey_100"
+                android:gravity="center" android:textSize="14sp" android:textStyle="bold"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
